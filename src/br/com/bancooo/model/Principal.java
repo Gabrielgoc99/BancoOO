@@ -37,6 +37,19 @@ public class Principal {
         funcionario.addCargo(cargo1);
         funcionario.addCargo(cargo2);
 
+        ContaCorrente contaA = new ContaCorrente(1000.0);
+        contaA.depositar(100.0);
+        contaA.retirar(500.0);
+        contaA.retirar(101.0);
+
+
+        ContaCorrente contaB = new ContaCorrente(1000.0);
+
+        contaB.transferir(contaA, 500.0);
+
+
+
+
     }
 
 }
